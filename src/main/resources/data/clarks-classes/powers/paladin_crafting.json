@@ -1,0 +1,79 @@
+{
+	"type": "origins:multiple",
+	"sacred_chime_recipe": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "clarks-classes:sacred_chime",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				" g ",
+				"gGg"
+			],
+			"key": {
+				"g": {
+					"item": "minecraft:gold_ingot"
+				},
+				"G": {
+					"item": "minecraft:gold_nugget"
+				}
+			},
+			"result": {
+				"item": "clarks_classes:sacred_chime"
+			}
+		}
+	},
+	"sacred_bell_recipe": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "clarks-classes:sacred_bell",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"ggg",
+				"gsg"
+			],
+			"key": {
+				"g": {
+					"item": "minecraft:gold_ingot"
+				},
+				"s": {
+					"item": "clarks_classes:sacred_chime"
+				}
+			},
+			"result": {
+				"item": "clarks_classes:sacred_bell"
+			}
+		}
+	},
+	"name": "Bellmet",
+	"description": "Upgrade your Sacred Chime into a Sacred Bell, which you can wear on your head.",
+	"badges": [
+		{
+			"type": "origins:crafting_recipe",
+			"sprite": "clarks_classes:textures/item/sacred_bell.png",
+			"recipe": {
+				"id": "clarks-classes:sacred_bell",
+				"type": "minecraft:crafting_shaped",
+				"pattern": [
+					"ggg",
+					"gsg"
+				],
+				"key": {
+					"g": {
+						"item": "minecraft:gold_ingot"
+					},
+					"s": {
+						"item": "clarks_classes:sacred_chime"
+					}
+				},
+				"result": {
+					"item": "clarks_classes:sacred_bell"
+				}
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "While worn, stacks of Purity do not decay, and you have a 30% chance to generate a stack of Purity whenever you are hit by an entity."
+		}
+	]
+}

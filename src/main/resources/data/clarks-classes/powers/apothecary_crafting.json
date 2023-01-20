@@ -1,0 +1,24 @@
+{
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "clarks-classes:vial_of_mercy",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"c",
+				"G",
+				"c"
+			],
+			"key": {
+				"c": {
+					"item": "minecraft:copper_ingot"
+				},
+				"G": {
+					"item": "minecraft:glass"
+				}
+			},
+			"result": {
+				"item": "clarks_classes:vial_of_mercy"
+			}
+		},
+	"hidden": true
+}

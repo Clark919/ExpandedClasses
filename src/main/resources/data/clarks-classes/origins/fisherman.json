@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "clarks-classes:fisherman_kit",
+    "clarks-classes:fisherman_fishing",
+    "clarks-classes:fisherman_junk",
+    "clarks-classes:fisherman_treasure"
+  ],
+  "icon": "minecraft:fishing_rod",
+  "order": 11,
+  "impact": 0,
+  "name": "Angler",
+  "description": "A humble fisherman, content with casting a line for rare fish and treasures."
+}

@@ -1,0 +1,393 @@
+{
+	"type": "origins:multiple",
+	"clock": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:clock",
+			"pattern": [
+				" # ",
+				"#R#",
+				" # "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:gold_ingot"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:clock",
+				"count": 2
+			}
+		}
+	},
+  "compass": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:compass",
+			"pattern": [
+				" # ",
+				"#R#",
+				" # "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:iron_ingot"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:compass",
+				"count": 2
+			}
+		}
+	},
+  "detector_rail": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:detector_rail",
+			"pattern": [
+				"# #",
+				"#S#",
+				"#R#"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:iron_ingot"
+				},
+        "S": {
+					"item": "minecraft:stone_pressure_plate"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:detector_rail",
+				"count": 12
+			}
+		}
+	},
+  "dispenser": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:dispenser",
+			"pattern": [
+				"###",
+				"#B#",
+				"#R#"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:cobblestone"
+				},
+        "B": {
+					"item": "minecraft:bow"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:dispenser",
+				"count": 2
+			}
+		}
+	},
+  "dropper": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:dropper",
+			"pattern": [
+				"###",
+				"# #",
+				"#R#"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:cobblestone"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:dropper",
+				"count": 2
+			}
+		}
+	},
+  "note_block": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:note_block",
+			"pattern": [
+				"###",
+				"#R#",
+				"###"
+			],
+			"key": {
+				"#": {
+					"tag": "minecraft:planks"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:note_block",
+				"count": 2
+			}
+		}
+	},
+  "observer": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:observer",
+			"pattern": [
+				"###",
+				"RRQ",
+				"###"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:cobblestone"
+				},
+        "Q": {
+					"item": "minecraft:quartz"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:observer",
+				"count": 2
+			}
+		}
+	},
+  "piston": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:piston",
+			"pattern": [
+				"###",
+				"CIC",
+				"CRC"
+			],
+			"key": {
+				"#": {
+					"tag": "minecraft:planks"
+				},
+        "C": {
+					"item": "minecraft:cobblestone"
+				},
+        "I": {
+					"item": "minecraft:iron_ingot"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:piston",
+				"count": 2
+			}
+		}
+	},
+  "powered_rail": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:powered_rail",
+			"pattern": [
+				"# #",
+				"#S#",
+				"#R#"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:gold_ingot"
+				},
+        "S": {
+					"item": "minecraft:stick"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:powered_rail",
+				"count": 12
+			}
+		}
+	},
+  "redstone_lamp": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:redstone_lamp",
+			"pattern": [
+				" R ",
+				"R#R",
+				" R "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:glowstone"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:redstone_lamp",
+				"count": 2
+			}
+		}
+	},
+  "repeater": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:repeater",
+			"pattern": [
+				"   ",
+				"TRT",
+				"###"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:stone"
+				},
+        "T": {
+					"item": "minecraft:redstone_torch"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:repeater",
+				"count": 2
+			}
+		}
+	},
+  "comparator": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:comparator",
+			"pattern": [
+				" T ",
+				"TQT",
+				"###"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:stone"
+				},
+        "T": {
+					"item": "minecraft:redstone_torch"
+				},
+				"Q": {
+					"item": "minecraft:quartz"
+				}
+			},
+			"result": {
+				"item": "minecraft:comparator",
+				"count": 2
+			}
+		}
+	},
+  "activator_rail": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:activator_rail",
+			"pattern": [
+				"#S#",
+				"#T#",
+				"#S#"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:iron_ingot"
+				},
+        "T": {
+					"item": "minecraft:redstone_torch"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:activator_rail",
+				"count": 12
+			}
+		}
+	},
+  "redstone_torch": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:redstone_torch",
+			"pattern": [
+				"   ",
+				" R ",
+				" S "
+			],
+			"key": {
+        "R": {
+					"item": "minecraft:redstone"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:redstone_torch",
+				"count": 2
+			}
+		}
+	},
+  "target": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "clarks-classes:target",
+			"pattern": [
+				" R ",
+				"RHR",
+				" R "
+			],
+			"key": {
+        "R": {
+					"item": "minecraft:redstone"
+				},
+				"H": {
+					"item": "minecraft:hay_block"
+				}
+			},
+			"result": {
+				"item": "minecraft:target",
+				"count": 2
+			}
+		}
+	},
+	"name": "Stronger Output",
+	"description": "Your crafting recipes that use redstone dust or torches as an ingredient yield twice the usual output.",
+	"badges": []
+}

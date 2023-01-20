@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "clarks-classes:apothecary_spawn",
+    "clarks-classes:apothecary_syringe",
+    "clarks-classes:apothecary_crafting"
+  ],
+  "icon": "clarks_classes:vial_of_mercy",
+  "order": 11,
+  "impact": 0,
+  "name": "Apothecary",
+  "description": "A medic of questionable ethics, who employs archaic methods to keep their patients intact."
+}

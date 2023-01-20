@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "clarks-classes:tanner_bundles",
+    "clarks-classes:tanner_crafting",
+    "clarks-classes:tanner_leather"
+  ],
+  "icon": "minecraft:leather",
+  "order": 11,
+  "impact": 0,
+  "name": "Tanner",
+  "description": "You are a master leatherworker."
+}

@@ -1,0 +1,11 @@
+{
+  "type": "origins:starting_equipment",
+  "stacks": [
+    {
+      "item": "minecraft:chest",
+      "tag": "{display:{Name:'[{\"text\":\"Plundered Chest\",\"italic\":false,\"color\":\"dark_purple\"}]'},BlockEntityTag:{LootTable:\"chests/village/village_weaponsmith\"}}"
+    }
+  ],
+  "name": "It Belongs in a Museum!",
+  "description": "You start with a chest you 'borrowed' from a village blacksmith. They don't need it... right?"
+}

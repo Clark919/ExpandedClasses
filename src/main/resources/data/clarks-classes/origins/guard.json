@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "clarks-classes:guard_health",
+    "clarks-classes:guard_shield"
+  ],
+  "icon": "minecraft:shield",
+  "order": 11,
+  "impact": 0,
+  "name": "Guard",
+  "description": "A guard of a once prominent village, now fallen. Their learned skills makes them a formidable wall in combat."
+}

@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Luck Increase",
+        "attribute": "minecraft:generic.luck",
+        "value": 10,
+        "operation": "addition"
+    },
+    "name": "Magpie",
+    "description": "You have a higher natural luck, resulting in better drops and chest loot."
+}

@@ -1,0 +1,19 @@
+{
+    "type": "origins:modify_xp_gain",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.25
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "clarks-classes:scholar_book"
+            }
+        }
+    },
+    "name": "Enlightenment",
+    "description": "You have 1.25x XP gain when holding a book, written book, or book & quill in your offhand."
+}

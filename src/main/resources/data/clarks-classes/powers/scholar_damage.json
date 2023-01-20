@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "condition": {
+        "type": "origins:in_tag",
+        "tag": "clarks-classes:undead"
+    },
+    "modifier": {
+        "name": "Extra damage when submerged",
+        "operation": "addition",
+        "value": 3.0
+    },
+    "name": "Autopsy",
+    "description": "Your understanding of monster anatomy lets you deal additional damage to Undead mobs."
+}

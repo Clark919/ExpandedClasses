@@ -1,0 +1,36 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+      {
+        "item": "clarks_classes:vial_of_mercy"
+      }
+    ],
+    "name": "I am the Cure",
+    "description": "You start with a Vial of Mercy, which may siphon Serum from undead mobs when you strike them with it.",
+  "badges": [
+    {
+      "type": "origins:crafting_recipe",
+      "sprite": "clarks_classes:textures/item/vial_of_mercy.png",
+      "recipe": {
+        "id": "clarks-classes:vial_of_mercy",
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "c",
+          "G",
+          "c"
+        ],
+        "key": {
+          "c": {
+            "item": "minecraft:copper_ingot"
+          },
+          "G": {
+            "item": "minecraft:glass"
+          }
+        },
+        "result": {
+          "item": "clarks_classes:vial_of_mercy"
+        }
+      }
+    }
+    ]
+  }

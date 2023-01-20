@@ -1,0 +1,130 @@
+{
+  "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:raycast",
+          "shape_type": "visual",
+          "fluid_handling": "none",
+          "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+              "type": "origins:and",
+              "actions": [
+                {
+                  "type": "origins:execute_command",
+                  "command": "power grant @s clarks-classes:paladin_player_buff"
+                },
+                {
+                  "type": "origins:execute_command",
+                  "command": "playsound minecraft:block.bell.resonate neutral @a ~ ~ ~ 2 2"
+                }
+              ]
+            }
+          },
+          "distance": 15,
+          "command_step": 1,
+          "command_along_ray": "particle minecraft:wax_on ~ ~ ~ 0.1 0.1 0.1 0 1 normal",
+          "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+              "type": "origins:entity_type",
+              "entity_type": "minecraft:player"
+            }
+          }
+          },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:block.bell.use neutral @a ~ ~ ~ 2 2"
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "clarks-classes:paladin_stacks_purity",
+          "change": -5
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "clarks_classes:sacred_chime"
+            }
+          }
+        },
+        {
+          "type": "origins:resource",
+          "resource": "clarks-classes:paladin_stacks_purity",
+          "comparison": ">=",
+          "compare_to": 5
+        }
+      ]
+    },
+    "cooldown": 350,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+      "bar_index": 0
+    },
+    "key": "key.use",
+    "name": "Divine Intervention",
+    "description": "Start with a Sacred Chime. Ring the chime to fire a reverberation that protects the first player it hits from an attack.",
+    "badges": [
+    {
+      "type": "origins:keybind",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Press %s while holding the chime in your offhand to cast. Requires 5 stacks of Purity to cast."
+    },
+      {
+        "type": "origins:crafting_recipe",
+        "sprite": "clarks_classes:textures/item/sacred_chime.png",
+        "recipe": {
+          "id": "clarks-classes:sacred_chime",
+          "type": "minecraft:crafting_shaped",
+          "pattern": [
+            " g ",
+            "gGg"
+          ],
+          "key": {
+            "g": {
+              "item": "minecraft:gold_ingot"
+            },
+            "G": {
+              "item": "minecraft:gold_nugget"
+            }
+          },
+          "result": {
+            "item": "clarks_classes:sacred_chime"
+          }
+        }
+      },
+      {
+        "type": "origins:crafting_recipe",
+        "recipe": {
+          "id": "clarks-classes:sacred_bell",
+          "type": "minecraft:crafting_shaped",
+          "pattern": [
+            "ggg",
+            "gsg"
+          ],
+          "key": {
+            "g": {
+              "item": "minecraft:gold_ingot"
+            },
+            "s": {
+              "item": "clarks_classes:sacred_chime"
+            }
+          },
+          "result": {
+            "item": "clarks_classes:sacred_bell"
+          }
+        }
+      }
+  ]
+}

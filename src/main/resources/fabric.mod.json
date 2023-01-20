@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "clarks_classes",
+  "version": "${version}",
+
+  "name": "Expanded Classes",
+  "description": "An addon that adds eight new and unique classes to the Origins - Classes mod.",
+  "authors": [
+    "Clarkster"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/clarks-classes-an-origins-addon",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/clarks_classes/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.clarkster.clarks_classes.ClarksClassesMod"
+    ],
+    "client": [
+      "com.clarkster.clarks_classes.ClientMod"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": ">=1.19",
+    "java": ">=17",
+    "origins": ">=1.6.2"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

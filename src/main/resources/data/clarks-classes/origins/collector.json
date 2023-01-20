@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "clarks-classes:collector_luck",
+    "clarks-classes:collector_kit"
+  ],
+  "icon": "minecraft:diamond",
+  "order": 12,
+  "impact": 0,
+  "name": "Collector",
+  "description": "A kleptomaniac with an eye for quality."
+}

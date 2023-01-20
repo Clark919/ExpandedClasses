@@ -1,0 +1,154 @@
+{
+
+  "type": "origins:multiple",
+
+  "serum": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 30,
+    "start_value": 30,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": "12",
+      "condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "item": "clarks_classes:vial_of_mercy"
+              }
+            }
+          },
+          {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "item": "clarks_classes:vial_of_mercy"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "vial_heal": {
+    "type": "origins:active_self",
+    "cooldown": 40,
+    "hud_render": {
+      "should_render": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:raycast",
+          "shape_type": "visual",
+          "fluid_handling": "none",
+          "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+              "type": "origins:and",
+              "actions": [
+                {
+                  "type": "origins:heal",
+                  "amount": 4
+                },
+                {
+                  "type": "origins:execute_command",
+                  "command": "particle heart ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                },
+                {
+                  "type": "origins:execute_command",
+                  "command": "data modify entity @s ConversionTime set value 2400",
+                  "condition": {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:zombie_villager"
+                  }
+                }
+              ]
+            }
+          },
+          "distance": 15,
+          "command_step": 1,
+          "command_along_ray": "particle minecraft:falling_lava ~ ~ ~ 0.1 0.1 0.1 0 1 normal"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:entity.sheep.shear neutral @a ~ ~ ~ 2 1.6"
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "*:*_serum",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "*:*_serum",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "clarks_classes:vial_of_mercy"
+            }
+          }
+        }
+      ]
+    },
+    "key": {
+      "key": "key.use"
+    }
+  },
+  "refill_vial": {
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:chance",
+        "action": {
+          "type": "origins:change_resource",
+          "resource": "*:*_serum",
+          "change": 1
+        },
+        "chance": 0.2
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:in_tag",
+        "tag": "clarks-classes:undead"
+      }
+    }
+  },
+  "name": "Transfusion",
+  "description": "Fire a stream of Serum from your Vial of Mercy. It will heal the first target it makes contact with.",
+  "badges": [
+    {
+      "type": "origins:keybind",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability, use %s to cast while holding a Vial of Mercy in your offhand."
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "The projectile from the Vial of Mercy will start the cure process for Zombie Villagers."
+    }
+  ]
+}

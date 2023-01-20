@@ -1,0 +1,18 @@
+{
+  "type": "origins:action_on_block_break",
+  "block_action": {
+    "type": "origins:chance",
+    "action": {
+    "type": "origins:execute_command",
+    "command": "summon minecraft:item ~ ~ ~ {Item:{id:\"minecraft:redstone\",Count:5}}"
+    },
+    "chance": 0.4
+},
+  "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "clarks-classes:redstone_ore"
+  },
+  "only_when_harvested": true,
+  "name": "Collecting Dust",
+  "description": "You have a chance to gather more redstone when you harvest a block of redstone ore."
+}

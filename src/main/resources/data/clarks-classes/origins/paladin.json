@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "clarks-classes:paladin_stacks",
+    "clarks-classes:paladin_shield",
+    "clarks-classes:paladin_crafting"
+  ],
+  "icon": "clarks_classes:sacred_chime",
+  "order": 11,
+  "impact": 0,
+  "name": "Paladin",
+  "description": "A holy warrior devoted to the protection of the light."
+}

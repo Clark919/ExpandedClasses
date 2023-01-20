@@ -10,7 +10,8 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/clarks-classes-an-origins-addon",
-    "sources": ""
+    "sources": "https://github.com/Clark919/ExpandedClasses",
+    "issues": "https://github.com/Clark919/ExpandedClasses/issues"
   },
 
   "license": "MIT",

@@ -10,11 +10,11 @@
       "actions": [
         {
           "type": "origins:execute_command",
-          "command": "playsound minecraft:block.bell.use neutral @a ~ ~ ~ 2 1"
+          "command": "playsound minecraft:block.bell.use neutral @a ~ ~ ~ 2 0.8"
         },
         {
           "type": "origins:execute_command",
-          "command": "particle minecraft:crit ~ ~0.5 ~ 0.2 0.5 0.2 0 10 normal"
+          "command": "particle minecraft:explosion ~ ~0.5 ~ 0.2 0.5 0.2 0 10 normal"
         },
         {
           "type": "origins:execute_command",
@@ -68,14 +68,6 @@
           "type": "origins:change_resource",
           "resource": "*:*_shield",
           "change": -10
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "playsound minecraft:block.bell.use neutral @a ~ ~ ~ 2 1"
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "particle minecraft:crit ~ ~0.5 ~ 0.2 0.5 0.2 0 10 normal"
         }
       ]
     }

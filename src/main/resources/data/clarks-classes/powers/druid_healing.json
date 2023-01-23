@@ -1,0 +1,88 @@
+{
+  "type": "origins:multiple",
+  "heal_meter": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 5,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": "4",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:*_heal_meter",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    }
+  },
+  "heal_increment": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_heal_meter",
+      "change": 1
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:submerged_in",
+          "fluid": "minecraft:water"
+        },
+        {
+          "type": "origins:relative_health",
+          "comparison": "<",
+          "compare_to": 1
+
+        }
+      ]
+    }
+  },
+  "heal_decrement": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_heal_meter",
+      "change": -1
+    },
+    "interval": 10,
+    "condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:water",
+      "inverted": true
+    }
+  },
+  "heal_reset": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "*:*_heal_meter",
+          "change": -5
+        },
+        {
+          "type": "origins:heal",
+          "amount": 7
+        },
+        {
+          "type": "origins:gain_air",
+          "value": 20
+        }
+      ]
+    },
+    "interval": 1,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_heal_meter",
+      "comparison": "==",
+      "compare_to": 5
+    }
+  },
+  "name": "Rejuvenation",
+  "description": "Fully submerging yourself in water will partially heal you and restore some breath after a short period of time."
+}

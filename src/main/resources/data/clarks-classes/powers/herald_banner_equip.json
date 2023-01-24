@@ -1,5 +1,13 @@
 {
 	"type": "origins:multiple",
+	"item_spawn": {
+		"type": "origins:starting_equipment",
+		"stacks": [
+			{
+				"item": "clarks_classes:buisine"
+			}
+		]
+	},
 	"white_banner": {
 		"type": "origins:active_self",
 		"condition": {

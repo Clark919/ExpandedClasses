@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "clarks-classes:herald_banner_equip",
+    "clarks-classes:herald_buff",
+    "clarks-classes:herald_crafting"
+  ],
+  "icon": "clarks_classes:buisine",
+  "order": 11,
+  "impact": 0,
+  "name": "Herald",
+  "description": "A ceremonial proclaimer of tidings and messages, who uses banners and music to announce their presence."
+}

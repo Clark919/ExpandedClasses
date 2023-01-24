@@ -1,0 +1,193 @@
+{
+	"type": "origins:multiple",
+	"white_banner": {
+		"type": "origins:active_self",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:white_banner"
+						}
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @s run item replace entity @s armor.head with minecraft:white_banner{display:{Name:\"\\\"Ominous Banner\\\"\"},BlockEntityTag:{Patterns:[{Pattern:\"mr\",Color:9},{Pattern:\"bs\",Color:8},{Pattern:\"cs\",Color:7},{Pattern:\"bo\",Color:8},{Pattern:\"ms\",Color:15},{Pattern:\"hh\",Color:8},{Pattern:\"bo\",Color:15}]}}"
+				},
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:consume"
+					}
+				}
+			]
+		},
+		"key": {
+			"key": "key.use",
+			"continuous": false
+		}
+	},
+	"orange_banner": {
+		"type": "origins:active_self",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:orange_banner"
+						}
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @s run item replace entity @s armor.head with minecraft:orange_banner{display:{Name:\"\\\"Coat of Arms: Fortitude\\\"\"},BlockEntityTag:{Patterns:[{Pattern:\"bs\",Color:15},{Pattern:\"cbo\",Color:15},{Pattern:\"mr\",Color:4},{Pattern:\"mc\",Color:0},{Pattern:\"tt\",Color:15},{Pattern:\"ts\",Color:15}]}}"
+				},
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:consume"
+					}
+				}
+			]
+		},
+		"key": {
+			"key": "key.use",
+			"continuous": false
+		}
+	},
+	"green_banner": {
+		"type": "origins:active_self",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:green_banner"
+						}
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @s run item replace entity @s armor.head with minecraft:green_banner{display:{Name:\"\\\"Coat of Arms: Swiftness\\\"\"},BlockEntityTag:{Patterns:[{Pattern:\"gru\",Color:5},{Pattern:\"rs\",Color:15},{Pattern:\"ls\",Color:15},{Pattern:\"tl\",Color:15},{Pattern:\"br\",Color:15},{Pattern:\"bts\",Color:15}]}}"
+				},
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:consume"
+					}
+				}
+			]
+		},
+		"key": {
+			"key": "key.use",
+			"continuous": false
+		}
+	},
+	"red_banner": {
+		"type": "origins:active_self",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:red_banner"
+						}
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @s run item replace entity @s armor.head with minecraft:red_banner{display:{Name:\"\\\"Coat of Arms: Strength\\\"\"},BlockEntityTag:{Patterns:[{Pattern:\"flo\",Color:0},{Pattern:\"hhb\",Color:15},{Pattern:\"cs\",Color:0},{Pattern:\"flo\",Color:15},{Pattern:\"tr\",Color:15},{Pattern:\"tl\",Color:15}]}}"
+				},
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:consume"
+					}
+				}
+			]
+		},
+		"key": {
+			"key": "key.use",
+			"continuous": false
+		}
+	},
+	"name": "Heraldry",
+	"description": "Equip a red, blue, green or white banner in your empty helmet slot (patterns will not transfer over, a custom banner icon will generate).",
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "Press %s while holding a banner in your mainhand with no helmet equipped."
+		}
+	],
+	"hidden": false
+}

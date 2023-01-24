@@ -1,0 +1,24 @@
+{
+  "type": "origins:recipe",
+  "recipe": {
+    "id": "clarks-classes:buisine",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "  g",
+      " gb",
+      "g  "
+    ],
+    "key": {
+      "g": {
+        "item": "minecraft:gold_ingot"
+      },
+      "b": {
+        "item": "minecraft:blue_banner"
+      }
+    },
+    "result": {
+      "item": "clarks_classes:buisine"
+    }
+  },
+  "hidden": true
+}

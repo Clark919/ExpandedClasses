@@ -1,0 +1,8 @@
+{
+  "coin_purse_empty": {
+    "subtitle": "clarksclassesmod.coin_purse_empty",
+    "sounds": [
+      "clarks_classes:coin_purse_empty"
+    ]
+  }
+}

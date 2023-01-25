@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "clarks-classes:farrier_tame"
+  ],
+  "icon": "minecraft:leather_horse_armor",
+  "order": 11,
+  "impact": 0,
+  "name": "Farrier",
+  "description": "An equine specialist who can enhance horses through various pieces of equipment."
+}

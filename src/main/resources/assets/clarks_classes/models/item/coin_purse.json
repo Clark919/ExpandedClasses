@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "clarks_classes:item/coin_purse_filled"
+  }
+}

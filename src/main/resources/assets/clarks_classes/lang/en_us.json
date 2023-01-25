@@ -2,5 +2,8 @@
     "item.clarks_classes.sacred_chime": "Sacred Chime",
     "item.clarks_classes.sacred_bell": "Sacred Bell",
     "item.clarks_classes.vial_of_mercy": "Vial of Mercy",
-    "item.clarks_classes.buisine": "Herald's Buisine"
+    "item.clarks_classes.buisine": "Herald's Buisine",
+    "item.clarks_classes.coin_purse": "Sealed Coin Purse",
+    "item.clarks_classes.coin_pouch.desc": "A [Cutpurse] should be able to open this...",
+    "clarksclassesmod.coin_purse_empty": "Coin purse emptied"
 }

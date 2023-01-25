@@ -1,0 +1,50 @@
+{
+  "type": "origins:multiple",
+  "pilfer": {
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+      "type": "origins:chance",
+      "chance": 0.2,
+      "action": {
+        "type": "origins:execute_command",
+        "command": "give @s clarks_classes:coin_purse 1"
+      }
+    },
+    "target_condition": {
+      "type": "origins:entity_type",
+      "entity_type": "minecraft:player",
+      "inverted": true
+    }
+  },
+  "loot_check": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "execute if entity @s[nbt={Inventory:[{id:\"clarks_classes:coin_purse\"}]}] run playsound clarks_classes:coin_purse_empty neutral @a ~ ~ ~ 0.5 1.5"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "function clarks-classes:loot_purse"
+        }
+      ]
+    },
+    "interval": 8
+  },
+  "name": "Pilfer",
+  "description": "On killing an enemy, they have a chance to drop a coin purse, containing Gold Nuggets and Emeralds.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "The purse will automatically open in your inventory, returning a piece of leather."
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "Purses have a 20% chance to drop from any non-player entity."
+    }
+  ]
+}

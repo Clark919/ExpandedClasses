@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "clarks-classes:cutpurse_rob",
+    "clarks-classes:cutpurse_luck",
+    "clarks-classes:cutpurse_intimidate"
+  ],
+  "icon": "clarks_classes:coin_purse",
+  "order": 11,
+  "impact": 0,
+  "name": "Cutpurse",
+  "description": "A cunning thief who robs and intimidates to gain riches."
+}

@@ -1,0 +1,26 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:luck",
+      "duration": 200,
+      "amplifier": 0,
+      "show_particles": false
+    }
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:daytime",
+    "inverted": true
+  },
+  "name": "Cover of Darkness",
+  "description": "You are luckier at nighttime.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "Luck impacts the loot you receive from coin purses."
+    }
+  ]
+}

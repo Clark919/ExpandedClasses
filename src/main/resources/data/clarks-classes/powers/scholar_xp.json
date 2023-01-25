@@ -2,7 +2,7 @@
     "type": "origins:modify_xp_gain",
     "modifier": {
         "operation": "multiply_base",
-        "value": 0.25
+        "value": 1
     },
     "condition": {
         "type": "origins:equipped_item",
@@ -15,5 +15,5 @@
         }
     },
     "name": "Enlightenment",
-    "description": "You have 1.25x XP gain when holding a book, written book, or book & quill in your offhand."
+    "description": "You have 2x XP gain when holding a book, written book, or book & quill in your offhand."
 }

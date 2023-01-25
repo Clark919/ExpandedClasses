@@ -18,6 +18,10 @@
                 },
                 {
                   "type": "origins:execute_command",
+                  "command": "tellraw @s {\"text\":\"A [Paladin] has granted you a shield!\"}"
+                },
+                {
+                  "type": "origins:execute_command",
                   "command": "playsound minecraft:block.bell.resonate neutral @a ~ ~ ~ 2 2"
                 }
               ]

@@ -1,6 +1,6 @@
 {
   "type": "origins:multiple",
-  "pilfer": {
+  "pilfer_day": {
     "type": "origins:self_action_on_kill",
     "entity_action": {
       "type": "origins:chance",
@@ -14,8 +14,32 @@
       "type": "origins:entity_type",
       "entity_type": "minecraft:player",
       "inverted": true
+    },
+    "condition": {
+      "type": "origins:daytime",
+      "inverted": false
     }
   },
+  "pilfer_night": {
+  "type": "origins:self_action_on_kill",
+  "entity_action": {
+    "type": "origins:chance",
+    "chance": 0.4,
+    "action": {
+      "type": "origins:execute_command",
+      "command": "give @s clarks_classes:coin_purse 1"
+    }
+  },
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "minecraft:player",
+    "inverted": true
+  },
+  "condition": {
+    "type": "origins:daytime",
+    "inverted": true
+  }
+},
   "loot_check": {
     "type": "origins:action_over_time",
     "entity_action": {

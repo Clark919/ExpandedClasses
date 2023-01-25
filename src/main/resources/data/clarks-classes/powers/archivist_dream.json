@@ -8,7 +8,7 @@
       "actions": [
         {
           "type": "origins:execute_command",
-          "command": "give @s minecraft:experience_bottle"
+          "command": "loot give @s loot clarks-classes:generic/archivist_dream"
         },
         {
           "type": "origins:execute_command",

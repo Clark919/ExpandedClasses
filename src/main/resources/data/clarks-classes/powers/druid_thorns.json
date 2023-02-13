@@ -3,7 +3,7 @@
   "modifier": {
     "name": "Reduced damage",
     "operation": "multiply_base_additive",
-    "value": 0.85
+    "value": 0.75
   },
   "bientity_action": {
       "type": "origins:chance",
@@ -31,6 +31,12 @@
         ]
       }
   },
+  "bientity_condition": {
+    "type": "origins:actor_condition",
+    "condition": {
+      "type": "origins:living"
+    }
+  },
   "name": "Barkskin",
-  "description": "You take 15% less damage. Have a chance to reflect some damage onto your attacker."
+  "description": "You take 25% less damage from living sources. Have a chance to reflect some damage onto your attacker."
 }

@@ -2,7 +2,7 @@
 name: "[I/Q] Issue or Question"
 about: Ask for help on a general issue you are having or ask a question to the developers.
 title: "[I/Q] My Question/Issue"
-labels: ''
+labels: issue or question
 assignees: ''
 
 ---

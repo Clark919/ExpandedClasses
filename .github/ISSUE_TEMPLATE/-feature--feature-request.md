@@ -3,7 +3,7 @@ name: "[FEATURE] Feature request"
 about: Suggest an idea for the mod - I'll read it and consider adding it. Do not post
   bugs under this category.
 title: ''
-labels: ''
+labels: feature or request
 assignees: ''
 
 ---
